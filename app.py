@@ -18,6 +18,24 @@ st.set_page_config(
     layout="wide"
 )
 
+# Custom CSS for Sidebar Enhancements (Works natively in both Light & Dark Themes)
+st.markdown("""
+<style>
+    /* Custom Sidebar Card Badges */
+    .sidebar-category-card {
+        background-color: rgba(99, 102, 241, 0.08);
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        border-radius: 8px;
+        padding: 6px 12px;
+        margin-bottom: 6px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # Title & Description
 st.title("🔒 Automated PII Redaction & Anonymization Tool")
 st.markdown(
@@ -28,25 +46,25 @@ st.markdown(
 
 st.divider()
 
-# Sidebar Metadata
+# Sidebar Metadata - Styled & Formatted
 with st.sidebar:
-    st.header("⚙️ Engine Status")
+    st.markdown("### ⚙️ Engine Details")
     st.success("🟢 System Active (v2.4)")
     st.info("⚡ Fast-Path Memoization Enabled")
     
     st.divider()
-    st.subheader("Protected PII Categories")
-    st.markdown("""
-    - 👤 **Full Names**
-    - 📧 **Email Addresses**
-    - 📞 **Phone Numbers**
-    - 🏢 **Company Names**
-    - 🏠 **Physical Addresses**
-    - 🪪 **Social Security Numbers**
-    - 💳 **Credit Card Numbers**
-    - 📅 **Dates of Birth**
-    - 🌐 **IP Addresses**
-    """)
+    st.markdown("### 🛡️ Protected PII Categories")
+    
+    st.markdown('<div class="sidebar-category-card">👤 Full Names</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sidebar-category-card">📧 Email Addresses</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sidebar-category-card">📞 Phone Numbers</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sidebar-category-card">🏢 Company Names</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sidebar-category-card">🏠 Physical Addresses</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sidebar-category-card">🪪 Social Security Numbers</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sidebar-category-card">💳 Credit Card Numbers</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sidebar-category-card">📅 Dates of Birth</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sidebar-category-card">🌐 IP Addresses</div>', unsafe_allow_html=True)
+    
     st.divider()
     st.caption("🔒 Synthetic entity mapping is deterministic & Luhn-validated.")
 
