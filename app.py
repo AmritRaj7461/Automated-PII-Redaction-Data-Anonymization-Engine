@@ -20,31 +20,41 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Advanced CSS for high-end Glassmorphism, animations, and typography
+# Advanced Adaptive CSS enforcing High-Contrast Dark Aesthetics across Light & Dark System Modes
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
     
     /* Main Background & Fonts */
     .stApp {
-        background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #0f172a 40%, #020617 100%);
-        font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+        background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #0f172a 50%, #020617 100%) !important;
+        font-family: 'Plus Jakarta Sans', -apple-system, sans-serif !important;
+        color: #f8fafc !important;
     }
     
-    /* Header Styling */
+    /* Sidebar styling overrides for seamless contrast */
+    [data-testid="stSidebar"] {
+        background-color: #0f172a !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    [data-testid="stSidebar"] * {
+        color: #f8fafc !important;
+    }
+    
+    /* Hero Header Container */
     .hero-container {
-        background: rgba(15, 23, 42, 0.65);
+        background: rgba(15, 23, 42, 0.75) !important;
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
-        border: 1px solid rgba(99, 102, 241, 0.25);
+        border: 1px solid rgba(99, 102, 241, 0.3);
         border-radius: 20px;
         padding: 32px;
-        margin-bottom: 28px;
+        margin-bottom: 24px;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
     }
     
     .main-header {
-        background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+        background: linear-gradient(135deg, #a5b4fc 0%, #c084fc 50%, #f472b6 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 800;
@@ -54,7 +64,7 @@ st.markdown("""
     }
     
     .sub-header {
-        color: #94a3b8;
+        color: #cbd5e1 !important;
         font-size: 1.1rem;
         font-weight: 400;
         line-height: 1.6;
@@ -63,29 +73,29 @@ st.markdown("""
     /* Stat Badge Pills */
     .badge-pill {
         display: inline-block;
-        padding: 5px 14px;
+        padding: 6px 14px;
         border-radius: 9999px;
-        font-size: 0.8rem;
-        font-weight: 600;
+        font-size: 0.825rem;
+        font-weight: 700;
         margin: 4px;
-        color: #ffffff;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        color: #ffffff !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
-    .badge-name { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
-    .badge-email { background: linear-gradient(135deg, #10b981, #047857); }
-    .badge-phone { background: linear-gradient(135deg, #f59e0b, #b45309); }
-    .badge-company { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
-    .badge-address { background: linear-gradient(135deg, #ec4899, #be185d); }
-    .badge-ssn { background: linear-gradient(135deg, #ef4444, #b91c1c); }
-    .badge-card { background: linear-gradient(135deg, #14b8a6, #0f766e); }
-    .badge-dob { background: linear-gradient(135deg, #6366f1, #4338ca); }
-    .badge-ip { background: linear-gradient(135deg, #64748b, #334155); }
+    .badge-name { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+    .badge-email { background: linear-gradient(135deg, #059669, #047857); }
+    .badge-phone { background: linear-gradient(135deg, #d97706, #b45309); }
+    .badge-company { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
+    .badge-address { background: linear-gradient(135deg, #db2777, #be185d); }
+    .badge-ssn { background: linear-gradient(135deg, #dc2626, #b91c1c); }
+    .badge-card { background: linear-gradient(135deg, #0d9488, #0f766e); }
+    .badge-dob { background: linear-gradient(135deg, #4f46e5, #4338ca); }
+    .badge-ip { background: linear-gradient(135deg, #475569, #334155); }
     
     /* Metric KPI Cards */
     .kpi-box {
-        background: rgba(30, 41, 59, 0.7);
+        background: rgba(30, 41, 59, 0.8) !important;
         backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
         border-radius: 16px;
         padding: 20px;
         text-align: center;
@@ -93,19 +103,19 @@ st.markdown("""
     }
     .kpi-box:hover {
         transform: translateY(-2px);
-        border-color: rgba(129, 140, 248, 0.5);
+        border-color: rgba(129, 140, 248, 0.6) !important;
     }
     .kpi-val {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
         font-weight: 800;
         background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     .kpi-lbl {
-        color: #94a3b8;
+        color: #94a3b8 !important;
         font-size: 0.825rem;
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         margin-top: 4px;
