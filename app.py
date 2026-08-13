@@ -108,8 +108,7 @@ st.markdown(
 
 # Sidebar Info
 with st.sidebar:
-    st.image("https://img.icons8.com/isometric/100/security-shield.png", width=80)
-    st.title("System Status")
+    st.markdown("## 🛡️ System Status")
     st.success("🟢 Engine Active (v2.4)")
     st.info("⚡ Fast-Path Memoized Caching Enabled")
     
