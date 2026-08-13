@@ -1,0 +1,257 @@
+[
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "NAME",
+    "value": "Rashi Patil"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "EMAIL",
+    "value": "rashhi.patil@gmail.com"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "PHONE",
+    "value": "+91 9876543210"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "COMPANY",
+    "value": "TechDynamics Pvt Ltd"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "ADDRESS",
+    "value": "Flat 4B, Blue Ridge Heights, MG Road, Bengaluru 560001"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "SSN",
+    "value": "123-45-6789"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "CREDIT_CARD",
+    "value": "4532-1234-5678-9012"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "DOB",
+    "value": "15/08/1990"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "IP_ADDRESS",
+    "value": "192.168.1.45"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "NON_PII",
+    "value": "TICKET-94021"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "NON_PII",
+    "value": "ORD-2024-8819"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "NON_PII",
+    "value": "TXN-99410283"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "NON_PII",
+    "value": "$15,000,000"
+  },
+  {
+    "ticket_id": "TICKET-94021",
+    "type": "NON_PII",
+    "value": "Section 4.2"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "NAME",
+    "value": "Rohan Dey"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "EMAIL",
+    "value": "rohan.dey@gmail.com"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "PHONE",
+    "value": "+91 9123456789"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "COMPANY",
+    "value": "Acme Financial Services"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "ADDRESS",
+    "value": "124 Park Avenue, Suite 300, New York, NY 10001"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "SSN",
+    "value": "987-65-4321"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "CREDIT_CARD",
+    "value": "5412-7512-3412-3456"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "DOB",
+    "value": "1985-11-23"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "IP_ADDRESS",
+    "value": "172.16.254.1"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "NON_PII",
+    "value": "TICKET-88120"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "NON_PII",
+    "value": "ORD-2026-9901"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "NON_PII",
+    "value": "TXN-55410928"
+  },
+  {
+    "ticket_id": "TICKET-88120",
+    "type": "NON_PII",
+    "value": "HTTP 404 NOT FOUND"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "NAME",
+    "value": "Sarah Jenkins"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "EMAIL",
+    "value": "sarah.j@acme-corp.org"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "PHONE",
+    "value": "+1 (555) 234-5678"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "COMPANY",
+    "value": "Cyberdyne Systems India"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "ADDRESS",
+    "value": "Plot 15, Sector 18, Cyber City, Gurgaon 122002"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "SSN",
+    "value": "456-78-1234"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "CREDIT_CARD",
+    "value": "3782-822456-91001"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "DOB",
+    "value": "March 12, 1994"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "IP_ADDRESS",
+    "value": "10.0.4.12"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "NON_PII",
+    "value": "TICKET-10492"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "NON_PII",
+    "value": "ORD-2026-7742"
+  },
+  {
+    "ticket_id": "TICKET-10492",
+    "type": "NON_PII",
+    "value": "TXN-33210984"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "NAME",
+    "value": "Vikram Malhotra"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "EMAIL",
+    "value": "v.malhotra@techdynamics.in"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "PHONE",
+    "value": "+44 20 7946 0912"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "COMPANY",
+    "value": "Global Wealth Solutions"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "ADDRESS",
+    "value": "45 Oxford Street, Westminster, London W1D 2DZ"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "SSN",
+    "value": "789-01-2345"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "CREDIT_CARD",
+    "value": "6011-1111-2222-3333"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "DOB",
+    "value": "04-07-1978"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "IP_ADDRESS",
+    "value": "203.0.113.195"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "NON_PII",
+    "value": "TICKET-77291"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "NON_PII",
+    "value": "ORD-2026-4410"
+  },
+  {
+    "ticket_id": "TICKET-77291",
+    "type": "NON_PII",
+    "value": "TXN-11029384"
+  }
+]
