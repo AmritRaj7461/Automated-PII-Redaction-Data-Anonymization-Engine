@@ -15,13 +15,45 @@ from pii_redactor import PIIAnonymizerEngine
 st.set_page_config(
     page_title="PII Redaction Tool",
     page_icon="🔒",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
-# Custom CSS for Sidebar Enhancements (Works natively in both Light & Dark Themes)
+# Custom Styling: Zero top padding above sidebar title & custom hamburger collapse button
 st.markdown("""
 <style>
-    /* Custom Sidebar Card Badges */
+    /* Remove empty top padding above sidebar title */
+    [data-testid="stSidebarUserContent"] {
+        padding-top: 0.5rem !important;
+    }
+    [data-testid="stSidebar"] {
+        padding-top: 0rem !important;
+    }
+    
+    /* Customize Sidebar Collapse / Expand button into Hamburger Icon (☰) */
+    [data-testid="stSidebarCollapseButton"] svg,
+    [data-testid="collapsedControl"] svg {
+        display: none !important;
+    }
+    [data-testid="stSidebarCollapseButton"]::after,
+    [data-testid="collapsedControl"]::after {
+        content: "☰" !important;
+        font-size: 1.4rem !important;
+        font-weight: 800 !important;
+        color: #818cf8 !important;
+        line-height: 1 !important;
+    }
+
+    /* Pinned Hamburger Button styling when collapsed */
+    [data-testid="collapsedControl"] {
+        background-color: rgba(30, 41, 59, 0.9) !important;
+        border: 1px solid rgba(129, 140, 248, 0.4) !important;
+        border-radius: 8px !important;
+        padding: 6px 10px !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    }
+    
+    /* Category Card Badges */
     .sidebar-category-card {
         background-color: rgba(99, 102, 241, 0.08);
         border: 1px solid rgba(99, 102, 241, 0.2);
@@ -46,7 +78,7 @@ st.markdown(
 
 st.divider()
 
-# Sidebar Metadata - Styled & Formatted
+# Sidebar Content
 with st.sidebar:
     st.markdown("## 🛡️ PII Guard Pro")
     st.caption("Automated Data Anonymization Engine")
