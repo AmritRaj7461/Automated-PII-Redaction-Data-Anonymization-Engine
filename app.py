@@ -19,38 +19,49 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom Styling: Zero top padding above sidebar title & custom hamburger collapse button
+# Custom Styling: Zero top padding above sidebar title & replace << icon cleanly with ☰
 st.markdown("""
 <style>
     /* Remove empty top padding above sidebar title */
     [data-testid="stSidebarUserContent"] {
-        padding-top: 0.5rem !important;
+        padding-top: 0.2rem !important;
     }
     [data-testid="stSidebar"] {
         padding-top: 0rem !important;
     }
     
-    /* Customize Sidebar Collapse / Expand button into Hamburger Icon (☰) */
-    [data-testid="stSidebarCollapseButton"] svg,
+    /* Completely hide native << SVG arrows */
+    button[data-testid="stSidebarCollapseButton"] svg,
     [data-testid="collapsedControl"] svg {
         display: none !important;
+        visibility: hidden !important;
     }
-    [data-testid="stSidebarCollapseButton"]::after,
-    [data-testid="collapsedControl"]::after {
+    
+    /* Replace button icon strictly with Hamburger (☰) */
+    button[data-testid="stSidebarCollapseButton"] {
+        font-size: 0px !important;
+    }
+    button[data-testid="stSidebarCollapseButton"]::after {
         content: "☰" !important;
-        font-size: 1.4rem !important;
+        font-size: 1.3rem !important;
         font-weight: 800 !important;
         color: #818cf8 !important;
-        line-height: 1 !important;
+        display: inline-block !important;
     }
 
-    /* Pinned Hamburger Button styling when collapsed */
     [data-testid="collapsedControl"] {
+        font-size: 0px !important;
         background-color: rgba(30, 41, 59, 0.9) !important;
         border: 1px solid rgba(129, 140, 248, 0.4) !important;
         border-radius: 8px !important;
-        padding: 6px 10px !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+        padding: 4px 8px !important;
+    }
+    [data-testid="collapsedControl"]::after {
+        content: "☰" !important;
+        font-size: 1.3rem !important;
+        font-weight: 800 !important;
+        color: #818cf8 !important;
+        display: inline-block !important;
     }
     
     /* Category Card Badges */
