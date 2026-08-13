@@ -48,6 +48,10 @@ st.divider()
 
 # Sidebar Metadata - Styled & Formatted
 with st.sidebar:
+    st.markdown("## 🛡️ PII Guard Pro")
+    st.caption("Automated Data Anonymization Engine")
+    st.divider()
+    
     st.markdown("### ⚙️ Engine Details")
     st.success("🟢 System Active (v2.4)")
     st.info("⚡ Fast-Path Memoization Enabled")
