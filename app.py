@@ -8,7 +8,7 @@ perform live PII redaction, inspect entity detection metrics, and download redac
 import streamlit as st
 import os
 import tempfile
-from pii_redactor import PIIRedactor
+from pii_redactor import PIIAnonymizerEngine
 
 st.set_page_config(
     page_title="PII Redaction Tool",
@@ -32,7 +32,7 @@ with col1:
     uploaded_file = st.file_uploader("Choose a .docx or .txt file", type=["docx", "txt"])
 
 if uploaded_file is not None:
-    redactor = PIIRedactor()
+    engine = PIIAnonymizerEngine()
     
     with tempfile.TemporaryDirectory() as temp_dir:
         input_file_path = os.path.join(temp_dir, uploaded_file.name)
@@ -43,11 +43,11 @@ if uploaded_file is not None:
             
         with st.spinner("Processing document and redacting PII..."):
             if uploaded_file.name.endswith(".docx"):
-                logs = redactor.redact_docx(input_file_path, output_file_path)
+                logs = engine.process_docx_document(input_file_path, output_file_path)
             else:
                 with open(input_file_path, "r", encoding="utf-8") as f:
                     content = f.read()
-                redacted_content, logs = redactor.redact_text(content)
+                redacted_content, logs = engine.redact_text_content(content)
                 with open(output_file_path, "w", encoding="utf-8") as f:
                     f.write(redacted_content)
 
